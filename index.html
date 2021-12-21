@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portifolio.css">
+    <title>Meu portifolio</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Qual seu Nome?")
+        console.log(nome)
+    </script>
+    
+    <div class="container">
+        
+        <header id="navbar" class="headfot">
+            <h1>Samuel Santana
+                <a href="index.html" ></a> 
+            </h1>
+
+            <nav id="navegacaonav" >
+
+                <button type="Button" class="buttonnav">
+                    <a href="paginas/projetos.html">Meus Projetos</a>  
+                </button>
+                <button type="Button" class="buttonnav">
+                    <a href="paginas/sobre.html">Quem sou eu</a>  
+                </button>
+            </nav>  
+
+        </header>
+        
+        <div class="conteudoindex">
+
+            <div class="flex-cont" id="column_left">
+                <script>
+                    if(nome != null){
+                        document.write("<h1 class='textdiferent'>"+`Olá ${nome} ,`+"</h1>")
+                    }else{
+                        document.write("<h1 class='textdiferent'>"+`Olá Visitante ,`+"</h1>")
+                    }                  
+                </script>
+
+                <p class="textdestaque"> 
+                    <strong>
+                    &nbsp Seja bem vindo, eu sou o Samuel
+                    Santana de Camargo e estou em busca
+                    de uma oportunidade para entrar na área
+                    de Desenvolvimento. Ao longo deste portifólio você me conhecerá melhor.
+                    </strong>
+                </p>
+                <p class="textdestaque">
+                    <strong>
+                    &nbsp Poderá saber sobre minhas Hardskills e Softskills, ver meu currículo,
+                    conhecer a minha historia, minhas metas, meus planos, 
+                    minhas dificuldades, meus projetos
+                    e minhas redes socias caso queira entrar em contato.
+                    </strong>
+                </p>
+                <div class="textdestaque" id="quadroapresent">
+                    <p>Nome: Samuel Santana de Camargo</p>
+                    <p>Idade: 19 anos</p>
+                    <p>Endereço: Estrada mato adentro N°5874</p>
+                    <p>Bairro: Jardim Samambaia</p>
+                    <p>Cidade: Itapecerica da Serra</p>
+                </div>
+            </div>
+
+            <div class="flex-cont" id="column_right"  >
+                <br><br>
+                <img src="imagens/meubanner.jpg" alt="Este sou eu" class="banner">
+            </div>
+
+        </div>
+
+        <footer>
+            <Div id="footer" class="headfot">
+                
+                <div class="textfooter">
+                    <h4>Entre em contato ou compartilhe com alguem:</h4>
+                </div>
+
+                <div class="buttonsfot">
+                <a href="https://github.com/SamuelSsc">
+                    <img class="logorede" src="imagens/github.png" alt="">
+                </a>
+
+                <a href="https://www.linkedin.com/in/samuel-santana-02b987196/">
+                    <img class="logorede" src="imagens/linkedin.png" alt="">
+                </a>
+
+                <a href="https://www.instagram.com/samuelsantanadecamargo/">
+                    <img class="logorede" src="imagens/instagram.png" alt="">
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100027216758008">
+                    <img class="logorede" src="imagens/facebook.png" alt="">
+                </a>
+
+                <a href="#">
+                    <img class="logorede" src="imagens/Compartilhar.png" alt="">
+                </a>
+
+                <a href="mailto:samuelssc5874@gmail.com">
+                    <img class="logorede" src="imagens/gmail.png" alt="">
+                </a>
+                </div>                
+            </Div>
+        </footer>
+    </div>
+</body>
+</html>

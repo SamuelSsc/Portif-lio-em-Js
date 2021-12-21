@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/portifolio.css">
+    <title>Sobre Mim</title>
+    <script src="../Js/interação.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="navbar" class="headfot">
+            <a href="../index.html">
+                <h1>Samuel Santana</h1>
+            </a>
+            
+
+            <nav id="navegacaonav" >
+                <button type="Button" class="buttonnav">
+                    <a href="projetos.html">Meus Projetos</a>  
+                </button>
+                <button type="Button" class="buttonnav">
+                    <a href="sobre.html">Quem sou eu</a>  
+                </button>
+            </nav>  
+
+        </header>
+
+        <div class="conteudosobre">
+            <!--<h2>Aqui você conhecerá um pouco mais sobre mim:</h2>-->
+
+            <div class="accordion" id="resumo">
+
+                <div class="panel">
+                    <div class="label">Dados pessoais</div>
+                    <div class="acccont">
+                        <p>
+                            Nome:  <strong>Santana de Camargo.</strong> <br><br>
+                            Idade:  <strong> 19 anos. </strong> <br><br>
+                            Cidade: <br> <strong> Itapecerica da Serra. </strong> <br>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="panel">
+                    <div class="label">SoftSkills</div>
+                    <div class="acccont">
+                        <p>
+                            - Resiliência Uma boa capacidade de se adaptar e ser flexivel. <br>
+                            - Empatia Busco sempre me colocar no lugar dos outros. <br>
+                            - Trabalho em Equipe busco absorver e agregar conhecimentos em equipe para um 
+                            desenvolvimento das partes.<br><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="label">HardSkills</div>
+                    <div class="acccont">
+                        <p>
+                            - Conhecimento em JavaScript, HTML, CSS e frameworks Bootstrap e jQuery. <br>
+                            - Conhecimento em python. <br>
+                            - Conhecimento em Banco de Dados MySQL. <br>
+                            - Conhecimento em PacoteOficce.<br>
+                        
+                        </p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="label">Formação</div>
+                    <div class="acccont">
+                        <p>
+                            <strong>- Ensino médio (Integral):</strong> E.E Salvador de Leone 2017 - 2019 <br><br>
+                            <strong>- Ensino Técnico em Desenvolvimento de Sistemas:</strong> ETEC Embu das Artes 2019 - 2020 <br><br>
+                            <strong>-Tecnólogo Analise e desenvolvimento de Sistemas:</strong> FATEC zona Sul.
+                        </p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="label">Certificado</div>
+                    <div class="acccont">
+                        <p>
+                            <strong>- IT essencials Cisco</strong> <br><br>
+                            <button type="Button" class="buttonnav" id="buttoncertifield">
+                                <a href="../Arquivos/certificado.pdf" download="certificado">Visualizar     </a>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+
+                <p>Para baixar o resumo em CV
+                    <button type="Button" class="buttonnav" id="buttoncertifield">
+                        <a href="../Arquivos/CV Samuel Santana de Camargo.pdf" download="certificado">Clique aqui!</a>
+                    </button>
+                </p>
+            </div>
+
+            <script>
+                const accordion = document.getElementsByClassName("panel");
+                for (i-0; i<accordion.length;i++){
+                    accordion[i].addEventListener('click',function(){
+                        this.classList.toggle('active');
+                    })
+                }
+            </script>
+            
+            <div class="sobre" id="historia">
+                <h3 id="titlehistoria">Minha Historia</h3>
+                <p class="textborder">   &nbsp Gostaria de começar dizendo que eu amo Tecnologia, e amo a sensação de ver um projeto
+                    sendo criado e saber que fiz parte daquilo, esta é uma sensação que eu conheço a não
+                    muito tempo na verdade, a primeira vez que senti foi no curso Tecnico de Desenvolvimento de Sistemas
+                    feito pela Etec de Embu das Artes, terminei meu curso técnico no fim do primeiro semestre de 2020,
+                    e por conta de não ter conseguido entrar no mercado durante o curso tive que arrumar um outro emprego
+                    para poder custear meus gastos, assim com o tempo acabei desanimando um pouco de procurar emprego na área
+                    e fui desistindo da progamação, de estudar e relembrar as matérias.
+                    <br><br>
+                      &nbsp Contudo no inicio do segundo semestre de 2021 consegui entrar para o Ensino Superior Tecnólogo 
+                    da Fatec na areá de Analise e Desenvolvimento de Sistemas, então agora é que eu estou voltando a estudar
+                    e me dedicar de forma dobrada à de antes para conseguir entrar na área.
+                    <br><br>
+                      &nbsp Hoje o meu maior desejo é poder ingressar na área e me desenvolver cada dia mais, pois busco um dia 
+                    me tornar um Desenvolvedor FullStack sabendo ao menos um pouco de cada área do Desenvolvimento para futuramente
+                    me especializar na que mais gostar de atuar, e sempre ampliar meus conhecimentos.                     
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+        <footer>
+            <Div id="footer" class="headfot">
+                
+                <div class="textfooter">
+                    <h4>Entre em contato ou compartilhe com alguem:</h4>
+                </div>
+
+                <div class="buttonsfot">
+                    <a href="https://github.com/SamuelSsc">
+                        <img class="logorede" src="../imagens/github.png" alt="">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/samuel-santana-02b987196/">
+                        <img class="logorede" src="../imagens/linkedin.png" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com/samuelsantanadecamargo/">
+                        <img class="logorede" src="../imagens/instagram.png" alt="">
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100027216758008">
+                        <img class="logorede" src="../imagens/facebook.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="logorede" src="../imagens/Compartilhar.png" alt="">
+                    </a>
+
+                    <a href="mailto:samuelssc5874@gmail.com">
+                        <img class="logorede" src="../imagens/gmail.png" alt="">
+                    </a>
+                </div>                
+            </Div>
+        </footer>   
+    </div>
+    
+</body>
+</html>
