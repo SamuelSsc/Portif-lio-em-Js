@@ -48,7 +48,8 @@ a{
 .headfot{
     display: flex; /**/
     background-color: #211f1f; /**/
-    margin: 15px;   /**/
+    margin: 5px;   /**/
+    height: 100%;
     text-align: center; /**/
     align-items: center; /**/
 }
@@ -143,6 +144,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 10px;
+    
 }
 
 .videotcc{
@@ -161,6 +163,7 @@ a{
     margin: 10px;
     margin-bottom: 30px;
     font-size: 120%;
+    height: 500px;
 }
 
 
